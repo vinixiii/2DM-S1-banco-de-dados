@@ -10,7 +10,7 @@ CREATE TABLE Permissoes
 
 CREATE TABLE Usuarios
 (
-	IdUsuario		INT PRIMARY KEY,
+	IdUsuario		INT PRIMARY KEY IDENTITY,
 	IdPermissao		INT FOREIGN KEY REFERENCES Permissoes (IdPermissao),
 	Nome			VARCHAR(150) NOT NULL,
 	Email			VARCHAR(200) NOT NULL,
