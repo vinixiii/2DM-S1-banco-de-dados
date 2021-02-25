@@ -10,3 +10,4 @@ Observações:
 Os Artistas deverão possuir somente nome.
 Estilos: nome.
 Albuns: titulo, data de lançamento, localizacao, quantidade de minutos, se o álbum está ativo para visualização, a quem pertence (somente um artista por álbum) e quais os estilos vinculados.
+
