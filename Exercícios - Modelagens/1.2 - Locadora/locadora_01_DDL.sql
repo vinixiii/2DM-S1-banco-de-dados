@@ -15,6 +15,7 @@
 
 * REFERENCES: Define qual campo de qual tabela será referenciado.
 */
+
 CREATE DATABASE Locadora;
 USE Locadora;
 
@@ -61,3 +62,9 @@ CREATE TABLE Alugueis
 	DataDeRetirada	DATE NOT NULL,
 	DataDeEntrega	DATE NOT NULL
 );
+
+ALTER TABLE Veiculos
+ALTER COLUMN Placa CHAR(7);
+
+ALTER TABLE Clientes
+ALTER COLUMN CPF CHAR(11);
