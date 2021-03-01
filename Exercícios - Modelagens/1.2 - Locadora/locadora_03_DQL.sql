@@ -34,4 +34,4 @@ INNER JOIN Veiculos
 ON Alugueis.IdVeiculo = Veiculos.IdVeiculo
 INNER JOIN Modelos
 ON Veiculos.IdModelo = Modelos.IdModelo
-WHERE Clientes.Nome LIKE 'Vinícius'
+WHERE Clientes.Nome LIKE 'Elaine'

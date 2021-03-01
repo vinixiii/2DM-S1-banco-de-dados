@@ -21,5 +21,5 @@ VALUES ('Vinícius', '11111111111'),
 	   ('Elaine', '22222222222');
 
 INSERT INTO Alugueis (IdCliente, IdVeiculo, Valor, DataDeRetirada, DataDeEntrega)
-VALUES (1, 3, 100, '23/02/2021', '24/02/2021'),
-	   (2, 2, 150, '24/02/2021', '25/02/2021');
+VALUES (2, 4, 100, '23/02/2021', '24/02/2021'),
+	   (3, 3, 150, '24/02/2021', '25/02/2021');

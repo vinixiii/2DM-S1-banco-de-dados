@@ -46,9 +46,23 @@ CREATE TABLE Veterinarios
 CREATE TABLE Consultas
 (
 	IdConsulta		INT PRIMARY KEY IDENTITY,
-	IdClinica		INT FOREIGN KEY REFERENCES Clinicas (IdClinica),
 	IdVeterinario	INT FOREIGN KEY REFERENCES Veterinarios (IdVeterinario),
 	IdPet			INT FOREIGN KEY REFERENCES Pets (IdPet),
 	Valor			MONEY NOT NULL,
-	DataDaConsulta	DATE NOT NULL
+	DataDaConsulta	DATE NOT NULL,
+	Descricao		VARCHAR(300) NOT NULL
 );
+
+-- Adicionando novo campo à tabela 'Veterinarios'
+ALTER TABLE Veterinarios
+ADD CRMV VARCHAR(9);
+
+-- Alterando o campo 'CRMV' para NOT NULL¹
+ALTER TABLE Veterinarios
+ALTER COLUMN CRMV VARCHAR(9) NOT NULL;
+
+-- Adicionando IdClinica à tabela Veterinarios
+ALTER TABLE Veterinarios
+ADD IdClinica INT FOREIGN KEY REFERENCES Clinicas (IdClinica);
+
+-- ¹ A alteração para NOT NULL só pode ser feita após algum valor ser inserido no campo
